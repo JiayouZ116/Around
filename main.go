@@ -3,12 +3,13 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/pborman/uuid"
-	elastic "gopkg.in/olivere/elastic.v3"
 	"log"
 	"net/http"
 	"reflect"
 	"strconv"
+
+	"github.com/pborman/uuid"
+	elastic "gopkg.in/olivere/elastic.v3"
 )
 
 type Location struct {
@@ -31,7 +32,7 @@ const (
 	//PROJECT_ID = "around-xxx"
 	//BT_INSTANCE = "around-post"
 	// Needs to update this URL if you deploy it to cloud.
-	ES_URL = "http://35.222.94.206:9200"
+	ES_URL = "http://34.71.224.246:9200"
 )
 
 func main() {
