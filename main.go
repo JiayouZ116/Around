@@ -197,7 +197,7 @@ func saveToBigTable(p *Post, id string) {
 		return
 	}
 
-	tbl := bt_client.Open("Post")
+	tbl := bt_client.Open("post")
 	mut := bigtable.NewMutation()
 	t := bigtable.Now()
 
